@@ -1,0 +1,74 @@
+header {
+    background-color: cadetblue;
+    color: white;
+    padding: 10px ;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: cornsilk;
+    color: black;
+}
+
+footer {
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+h1 {
+    font-family: "Pacifico";
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    font-size: 2vh;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header div {
+    display: flex;
+}
+
+form {
+    width: 33%;
+    margin: 48px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 80%;
+        margin: 12px;
+    }
+}
+
+h2 {
+    margin: 24px;
+}
+
+#myChart {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
