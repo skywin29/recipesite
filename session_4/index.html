@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>recipeSite</title>
+</head>
+<body>
+    <header>
+        <h1>RecipeSite</h1>
+        <div>
+            <a href="">Recipes</a>
+            <a href="">About us</a>
+            <a href="">Contact</a>
+        </div>
+    </header>
+    <main>
+        <h2>My Favourite Recipes</h2>
+        <canvas id="myChart"></canvas>
+        <form>
+            <p>Add new recipe:</p>
+            <div class="form-row">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+            </div>
+            <br>
+            <div class="form-row">
+                <label for="cuisine">Cuisine: </label>
+                <input type="text" name="cuisine" id="cuisine">
+            </div>
+            <br>
+            <div class="form-row">
+                <label for="time">Time: </label>
+                <input type="text" name="time" id="time">
+            </div>
+            <br>
+            <div class="form-row">
+                <label for="ingredients">Ingredients (put new ingredients on new line):  </label>
+                <textarea name="ingredients" id="ingredients"></textarea>
+            </div>
+            <br>
+            <div class="form-row">
+                <label for="steps">Steps (put each step on a new line): </label>
+                <textarea name="steps" id="steps"></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Add new recipe">
+        </form>
+        <ul id="recipe-list">
+
+        </ul>
+    </main>
+    <footer>
+        <a href="">About us</a>
+        <a href="">Contact</a>
+        <a href="">Terms of use</a>
+    </footer>
+</body>
+</html>
